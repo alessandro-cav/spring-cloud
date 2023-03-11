@@ -10,7 +10,7 @@ import br.com.ms.loja.entity.Produto;
 
 
 @Component
-@FeignClient(name = "ms-produto", url= "localhost:8081", path = "/produtos")
+@FeignClient(name = "ms-produto",path = "/produtos")
 public interface LojaFeignClient {
 	
 	@GetMapping("/{id}")
