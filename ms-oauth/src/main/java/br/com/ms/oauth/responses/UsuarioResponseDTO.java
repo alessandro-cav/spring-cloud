@@ -1,9 +1,10 @@
 package br.com.ms.oauth.responses;
+
 import java.io.Serializable;
 
 import br.com.ms.oauth.enuns.Status;
 
-public class UsuarioResponseDTO  implements Serializable {
+public class UsuarioResponseDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -13,7 +14,17 @@ public class UsuarioResponseDTO  implements Serializable {
 
 	private Status status;
 
+	private String password;
+
 	private PerfilResponseDTO perfil;
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public Long getId() {
 		return id;
@@ -46,8 +57,5 @@ public class UsuarioResponseDTO  implements Serializable {
 	public void setPerfil(PerfilResponseDTO perfil) {
 		this.perfil = perfil;
 	}
-	
-	
-	
 
 }

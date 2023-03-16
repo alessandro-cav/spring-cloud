@@ -53,6 +53,7 @@ public class UsuarioController {
 		usuarioResponseDTO.setLogin(usuario.getLogin());
 		usuarioResponseDTO.setStatus(usuario.getStatus());
 		usuarioResponseDTO.setPerfil(perfilResponseDTO);
+		usuarioResponseDTO.setPassword(usuario.getPassword());
 
 		return ResponseEntity.ok(usuarioResponseDTO);
 	}

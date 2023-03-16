@@ -1,6 +1,5 @@
 package br.com.ms.oauth.services;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import br.com.ms.oauth.entities.Perfil;
@@ -37,5 +36,6 @@ public class UsuarioService {
 		return usuario;
 
 	}
+
 
 }
